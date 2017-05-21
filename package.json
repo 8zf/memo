@@ -1,0 +1,22 @@
+{
+  "name": "memo",
+  "version": "1.0.0",
+  "description": "一个智障的在线memo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharpZhang/memo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharpZhang/memo/issues"
+  },
+  "homepage": "https://github.com/SharpZhang/memo#readme",
+  "dependencies": {
+    "koa": "^2.2.0"
+  }
+}
