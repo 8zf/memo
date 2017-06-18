@@ -7,6 +7,8 @@
 
 [前端代码](https://github.com/SharpZhang/memo-front-end)
 
+在线版本出了些诡异的bug，暂不提供访问
+
 ## 功能
 创建记事，可以附带多张图片。
 
