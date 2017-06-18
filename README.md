@@ -2,7 +2,6 @@
 
 ## 概要
 模仿google keep的一个在线富文本记事本。
-[地址](https://memo.zhangfeng.site)
 
 ## 功能
 创建记事，可以附带多张图片。
