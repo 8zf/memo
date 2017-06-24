@@ -6,6 +6,7 @@
 这是后端代码以及介绍。
 
 [前端代码](https://github.com/SharpZhang/memo-front-end)
+[后端代码](https://github.com/SharpZhang/memo)
 
 在线版本出了些诡异的bug，暂不提供访问
 
