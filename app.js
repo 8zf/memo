@@ -14,15 +14,15 @@ app.use(function *(next){
     if (401 == err.status) {
       this.status = 401;
       this.set('WWW-Authenticate', 'Basic');
-      this.body = 'cant haz that';
+      this.body = '需要认证哦';
     } else {
       throw err;
     }
   }
 });
-//app.use(auth({ name: 'zhang', pass: 'zhzhang' }));
+app.use(auth({ name: 'zhang', pass: 'zhzhang' }));
 app.use(serve('./public', {
-  maxage: 1000 * 60 * 60 * 24 * 365, // 1年，默认为0
+  maxage: 1000 * 60 * 60 * 24 * 1, // 1天，默认为0
   hidden: false, // 能否返回隐藏文件（以`.`打头），默认false不返回
   index: 'index.html', // 默认文件名
   gzip: true
@@ -34,8 +34,6 @@ app.use(mongo({
   port: 27017,
   db: 'memo'
 }));
-
-
 
 app
   .use(router.routes())
