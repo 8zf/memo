@@ -1,0 +1,32 @@
+version: "2"
+services:
+  web:
+    image: zf2333/memo:v1.2.0 
+    depends_on: 
+      - db
+    ports:
+      - "3001:3000"
+    volumes:
+      - $HOME/memostore:/public/uploads
+    entrypoint:
+      - npm
+      - start
+    links:
+      - db:dbserver
+  db:
+    image: mongo:latest
+    volumes: 
+      - $HOME/mongodata:/data/db 
+  caddy:
+    image: abiosoft/caddy
+    depends_on:
+      - web
+    links:
+      - web:webserver
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $HOME/Caddyfile:/etc/Caddyfile
+      - $HOME/.caddy:/root/.caddy # where Let's encrypt certificates are sotred
+      

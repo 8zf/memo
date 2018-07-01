@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log
+.DS_Store
+.idea
+.git
+public/uploads
+memostore
+mongodata
+.gitignore
+docker-compose.yml
+Dockerfile
+Dockerfile2
+dou2.txt
+memo网页备份12-07.zip
+README.md
+*.swp
